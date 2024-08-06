@@ -170,6 +170,21 @@ button{
     margin: 5px;
     border-radius: 5px;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left:10px;
+    height:clamp(18%, 20%, 22%);
+}
+#trending img{
+    height: 40px;
+}
+#trending p, #trending h6{
+    
+    margin: 5px;
+}
+#trending p{
+    opacity: 80%;
 }
 
 #announcements{
