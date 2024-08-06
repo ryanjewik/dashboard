@@ -46,7 +46,7 @@
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-columns: 4fr 3fr 1.2fr;
     grid-template-rows: 60px 60px;
     padding: 30px;
     margin-bottom: 30px;
@@ -78,17 +78,25 @@
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: 16px;
 }
 #profile img{
-    height: 35px;
+    height: 50px;
     display:block;
     margin: 12px;
     justify-self: center;
 }
+#greeting{
+    margin-top: 0px;
+    grid-row: 2;
+    grid-column: 1;
+}
 #action-btns{
-    background-color: blue;
     grid-row: 2;
     grid-column: 3;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 button{
@@ -98,7 +106,12 @@ button{
     border-color: #1992d4;
     padding: 8px 10px;
     width: 60px;
+    height: 30px;
     margin: 4px;
+    display: flex;
+    text-align: center ;
+    justify-content: center;
+    
 }
 
 /*----------main page----------*/
@@ -124,8 +137,11 @@ button{
 }
 
 .project-card{
-    height: 100px;
-    width: 200px;
+    resize: both;
+    min-height:100px;
+    min-width: 200px;
+    max-width: 80%;
+    max-height: 80%;
     background-color: white;
     border-radius: 10px;
     border-left-style: solid;
